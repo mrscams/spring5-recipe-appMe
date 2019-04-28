@@ -6,5 +6,7 @@ import org.springframework.data.repository.CrudRepository;
 
 import java.util.Optional;
 
-public  interface  RecipeRepository extends CrudRepository<Recipe, Long> {
+
+public  interface CategoryRepository extends CrudRepository<Category, Long> {
+    Optional<Category> findByDescription(String description);
 }
